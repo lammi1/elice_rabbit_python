@@ -1,0 +1,16 @@
+if 조건:
+    하고싶은 동작
+    
+[실습15]
+# 토끼를 오른쪽 귀퉁이로 데려가 봅시다.
+for i in range(4):
+    rabbit.move()
+# 당근이 있는지 확인하고 있으면 당근을 뽑는 코드를 작성해 봅시다.
+for i in range(3):
+    if rabbit.on_carrot():
+        rabbit.pick_carrot()
+# 당근이 없으면 다음 귀퉁이로 이동해야겠죠?
+    rabbit.turn_left()
+    for i in range(4):
+        rabbit.move()
+rabbit.drop_carrot()
